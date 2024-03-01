@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi primera web</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/cc039a9dbd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/c9b87a4bee.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <header id="encabezado">
+        <script src="script.js"></script>
+        <a href="index.html"><i class="fa-solid fa-heart"></i></a>
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <ul>
+            <li>Inicio</li>
+            <li>Acerca de mi</li>
+            <li>Trabajos</li>
+            <li>Servicios</li>
+            <li>Contacto</li>
+          </ul>
+        </nav>
+      </header>
+
+      <main id="seccion-principal">
+        <section class="seccion-1">
+          <div class="acerca-de">
+            <h2>Acerca de mi</h2>
+            <p class="parrafo1">
+              ¡Bienvenidos a mi página! Aquí aprenderán más sobre mi.
+            </p>
+            <p class="parrafo2">
+              Me llamo Santiago Deniz, nací en Río Branco pero desde 2013 me
+              encuentro viviendo en Montevideo. Me gusta aprender, enseñar,
+              tocar la guitarra, jugar juegos de mesa y programar.
+            </p>
+          </div>
+          <div class="acerca-imagen">
+            <img src="img/yo.jpg" alt="imagen personal" />
+          </div>
+        </section>
+        <section class="seccion-2">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/955/962/485/guitar-wallpaper-preview.jpg"
+            alt="imagen de carrusel"
+          />
+        </section>
+        <section class="seccion-3">
+          <h1>Experiencias</h1>
+          <div class="tarjetas">
+            <div class="tarjeta-1">
+              <h2 class="titulos-tarjetas">Docencia</h2>
+              <p class="parrafos-tarjetas">
+                Profesor de Informática/Ciencias de la Computación desde 2016,
+                con experiencia en sector público y privado, trabajos técnicos y
+                de aula
+              </p>
+              <div class="img-tar-1">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1359167102851112968/sbDzHSy-_400x400.jpg"
+                  alt="imagen de DGES"
+                />
+              </div>
+            </div>
+            <div class="tarjeta-2">
+              <h2 class="titulos-tarjetas">Pizzería Don Giuseppe</h2>
+              <p class="parrafos-tarjetas">
+                2 años como emprendedor en rubro de la gastronomía, en sociedad
+                realizando trabajos de gerencia, marketing, manejo de redes,
+                administración y recursos humanos
+              </p>
+              <div class="img-tar-2">
+                <img
+                  src="https://lh3.googleusercontent.com/p/AF1QipNhNickG_rMO2pTbv-4BS4os-k58BFs9xqwbtWk=w1080-h608-p-no-v0"
+                  alt="imagen de hamburguesa Don Giuseppe"
+                />
+              </div>
+            </div>
+            <div class="tarjeta-3">
+              <h2 class="titulos-tarjetas">Música</h2>
+              <p class="parrafos-tarjetas">
+                13 años de experiencia como guitarrista tocando en bandas e
+                iglesias
+              </p>
+              <div class="img-tar-3">
+                <img src="img/guitarrista.jpg" alt="Tocando guitarra" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="form-header">
+          <h1>Contacto</h1>
+          <p><em>¡Esperamos tu consulta!</em></p>
+    
+          <form action="" method="get" class="formulario" id="form">
+            <div class="form-row">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="pepe@gmail.com"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje"></textarea>
+            </div>
+            <div class="form-row">
+              <button type="submit" id="submit">Enviar</button>
+            </div>
+            <p class="alertas" id="alertas"></p>
+          </form>
+        </div>
+      </main>
+
+      <footer>
+        <h3>Redes Sociales</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>LinkedIn</li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
